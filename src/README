@@ -1,0 +1,51 @@
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+Using sorting method for array from Horstmann, Sect. 14.8
+Using regular-expression from JAVA Oracle Help Center
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+
+----------------------------------------------
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+
+WordFinder:
+This class has a main that's responsible for processing the command-line argument
+, and handling any error processing. It also has the main command loop.
+This class calls ScoreCalculator class to find all words and their score from racks,
+and only depends on the ScoreCalculator.
+
+ScoreCalculator:
+The class I made.
+It calculates the scores of all the subset of rack.
+To achieve this, it uses AnagramDictionary to find all legal word combinations of Rack
+and uses information in ScoreTable to calculates the scores.
+It doesn't process any command-line argument or handle any error processing.
+WordFinder does and passes needed information to it.
+
+Rack
+This corresponds to the idea of the rack in the problem description.
+Thus,This class stores the letters and find all subsets of rack.
+
+AnagramDictionary
+This contains the dictionary data organized by anagrams.
+It reads all the words in dictionary to a Map and helps to find all anagrams of a string
+
+ScoreTable
+This class has information about Scrabble scores for scrabble letters and words by hard-coding in its data.
+It helps to find score of a string
+
+
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+
+
+
+
